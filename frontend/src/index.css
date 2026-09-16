@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0B0C0E;
+  --color-surface: #111318;
+  --color-surface-raised: #15171C;
+  --color-border: #24272D;
+  
+  --color-primary: #E8EAF0;
+  --color-secondary: #8B919D;
+  --color-muted: #555B66;
+  
+  --color-accent: #56D4D0;
+  
+  --color-clean: #22c55e;
+  --color-review: #f59e0b;
+  --color-strong: #ef4444;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  /* Assuming you have JetBrains Mono installed or via Google Fonts */
+  font-family: 'Inter', system-ui, sans-serif; 
+}
+
+/* Custom scrollbar for dense workstation feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted); 
+}

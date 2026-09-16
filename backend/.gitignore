@@ -1,0 +1,141 @@
+# ==========================================
+# SOURCELENS - Git Ignore
+# ==========================================
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+*.env.local
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ---------- Node / Frontend ----------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build output
+dist/
+build/
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ---------- SourceLens Data ----------
+# Uploaded documents
+uploads/
+storage/uploads/
+data/uploads/
+
+# Generated reports
+reports/generated/
+storage/reports/
+
+# Temporary processing files
+tmp/
+temp/
+*.tmp
+
+# Extracted document data
+extracted/
+processed/
+
+# ---------- ML / Embeddings ----------
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Vector databases / indexes
+vector_store/
+faiss_index/
+qdrant_storage/
+
+# ---------- Database ----------
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL local data
+postgres_data/
+pgdata/
+
+# ---------- Docker ----------
+docker-compose.override.yml
+
+# ---------- IDE / Editors ----------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.iml
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Testing ----------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ---------- Generated files ----------
+*.log
+*.bak
+*.swp
+*.swo
+
+# ---------- Security ----------
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# ---------- TypeScript ----------
+*.tsbuildinfo
+
+# ---------- Misc ----------
+.cache/
+.parcel-cache/
+.turbo/
+.vercel/
+.netlify/
